@@ -206,16 +206,16 @@ body.light-theme #NovoOferta {
   color: #1a1a1a;
 }
 
-body.light-theme .product-name{
+body.light-theme .product-name {
   color: #000000;
 }
 
-body.light-theme #comprarHero{
+body.light-theme #comprarHero {
   color: #000000;
-  transition: color .5s ease;
+  transition: color 0.5s ease;
 }
 
-body.light-theme #comprarHero:hover{
+body.light-theme #comprarHero:hover {
   color: white;
 }
 
@@ -224,7 +224,7 @@ body.light-theme .product-card {
   border: 1px solid #e5e7eb;
 }
 
-body.light-theme .product-card:hover{
+body.light-theme .product-card:hover {
   border-color: #363636;
 }
 
@@ -253,14 +253,14 @@ body.light-theme .categoriasfooter-column {
 
 body.light-theme .footer-link {
   color: #232323;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
-body.light-theme .footer-link:hover{
+body.light-theme .footer-link:hover {
   color: #2189ff;
 }
 
-body.light-theme #container-footer-linkfooter-column{
+body.light-theme #container-footer-linkfooter-column {
   border-top: 1px solid #00000053;
   border-bottom: 1px solid #00000053;
 }
@@ -268,35 +268,26 @@ body.light-theme #container-footer-linkfooter-column{
 #navMenu {
   list-style-type: none;
   display: flex;
-}
-
-li {
-  margin: 30px;
-  color: white;
+  gap: 50px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid #363636;
+  padding: 15px;
 }
 
 .nav-link {
+  padding: 5.5px;
+  border: 1px solid transparent;
+  border-radius: 10px;
   color: white;
-  position: relative;
   font-weight: bold;
   text-decoration: none;
+  transition: border .5s ease;
 }
 
-.nav-link::before {
-  content: '';
-  left: 0;
-  position: absolute;
-  bottom: 0;
-  height: 1.5px;
-  width: 100%;
-  background: white;
-  transition: 0.3s ease;
-  transform-origin: center;
-  transform: scaleX(0) scaleY(0);
-}
-
-.nav-link:hover::before {
-  transform: scaleX(1) scaleY(1);
+.nav-link:hover {
+  border: 1px solid white;
 }
 
 input {
@@ -456,17 +447,17 @@ h3 {
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 
-  & .product-name {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
   & span {
     color: #2189ff;
     margin-top: 10px;
     font-size: 18px;
   }
+}
+
+.product-name {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #purchase-card {
