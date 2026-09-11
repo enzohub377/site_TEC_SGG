@@ -50,7 +50,7 @@ img {
   font-style: italic;
 }
 
-.background-content {
+/* .background-content {
   background-color: #ffffff;
   background-color: #000000;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.55'%3E%3Cpolygon fill='%230f0f0f' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%231e1e1e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%232c2c2c' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%233b3b3b' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%234A4A4A' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -58,7 +58,7 @@ img {
   background-size: cover;
   padding-top: 80px;
   height: 100%;
-}
+} */
 
 hr {
   width: 80%;
@@ -174,9 +174,11 @@ body.light-theme #themeMoon {
   display: none;
 }
 
-body.light-theme .background-content {
-  background-image: none;
-  background-color: #f4f5f7;
+body.light-theme article {
+background-color: #FFFFFF;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23d2d2d2' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23a8a8a8' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%237f7f7f' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23585858' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23343434' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 
 body.light-theme header {
@@ -201,18 +203,9 @@ body.light-theme .nav-link::before {
   background: #000000;
 }
 
-body.light-theme h3,
-body.light-theme #NovoOferta {
-  color: #1a1a1a;
-}
-
-body.light-theme .product-name {
-  color: #000000;
-}
-
 body.light-theme #comprarHero {
-  color: #000000;
-  transition: color 0.5s ease;
+  transition: all 0.5s ease;
+  border-color: #888;
 }
 
 body.light-theme #comprarHero:hover {
@@ -240,6 +233,36 @@ body.light-theme .btn-link {
 body.light-theme .btn-link:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+body.light-theme h3 {
+  color: #000000;
+}
+
+body.light-theme .product-name {
+  color: #000000;
+}
+
+body.light-theme #purchase-card h3 {
+  color: #000000;
+}
+
+body.light-theme span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+body.light-theme h4 {
+  color: #000000;
+}
+
+body.light-theme #novaOferta {
+  color: #000000;
+}
+
+body.light-theme s {
+  color: white;
+  font-weight: bold;
 }
 
 body.light-theme footer {
@@ -283,7 +306,7 @@ body.light-theme #container-footer-linkfooter-column {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  transition: border .5s ease;
+  transition: border 0.5s ease;
 }
 
 .nav-link:hover {
@@ -353,8 +376,14 @@ article {
     #2a292938 0px 15px 12px;
   display: flex;
   align-items: flex-start;
+  margin-top: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.55'%3E%3Cpolygon fill='%230f0f0f' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%231e1e1e' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%232c2c2c' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%233b3b3b' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%234A4A4A' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
 }
 
 #hero-content {
@@ -446,12 +475,12 @@ h3 {
   align-items: center;
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
 
-  & span {
-    color: #2189ff;
-    margin-top: 10px;
-    font-size: 18px;
-  }
+span {
+  color: #2189ff;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .product-name {
@@ -473,7 +502,7 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
-#NovoOferta {
+#novaOferta {
   font-size: 17px;
   color: white;
 }
