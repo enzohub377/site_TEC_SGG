@@ -93,8 +93,8 @@ const labelCor = document.createElement('span');
 labelCor.classList.add('color-label');
 
 labelCor.style.position = 'absolute';
-labelCor.style.fontSize = '14px';
-labelCor.style.top = '-45px';
+labelCor.style.fontSize = '18px';
+labelCor.style.top = '-57.5px';
 labelCor.style.left = '50%';
 labelCor.style.transform = 'translateX(-50%)';
 labelCor.style.pointerEvents = 'none';
